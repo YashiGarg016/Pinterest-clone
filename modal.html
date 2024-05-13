@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/normal.css">
+    <link rel="stylesheet" href="./styles/modalStyle.css">
+
+</head>
+<body>
+    <div class="addPinModal">
+        <div class="addPinCont">
+            <div class="side" id="leftSide">
+                <div class="section1">
+
+                    <div class="pintMock">
+                        <img src="./images/ellipsis.png" alt="edit" class="pintMock_icon">
+                    </div>
+
+                </div>
+                <div class="section2">
+                    <label for="upload_img" id="upload_img_label">
+                        <div class="upload_img_cont">
+                            <div id="dotted_border">
+                                <div class="pintMock">
+                                    <img src="./images/up-arrow (3).png" alt="upload_img" class="pintMock_icon">
+                                </div>
+                                <div>Click to upload</div>
+                                <div>Recommendation: Use high-quality .jpg files less than 20MB.</div>
+                                
+                            </div>
+                        </div>
+                        <input type="file" name="upload_img" id="upload_img">
+                    </label>
+                    <div class="modalsPins">
+                        <div class="pinImage">
+                            <!--<img src="" alt="Pin Image"> -->
+                    </div>
+                    
+                </div>
+                </div>
+                <div class="section3">
+                    <div class="save_from_site">Save From Site</div>
+                </div>
+            </div>
+            <div class="side" id="rightSide">
+                <div class="section1">
+                    <div class="select_size">
+                        <select name="pin_size" id="pin_size">
+                            <option value="" disabled selected>Select</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                        <div class="save_pin">Save</div>
+                    </div>
+                </div>
+                <div class="section2">
+                    <input placeholder="Add your title" type="text" class="new_pin_input" id="pin_title">
+                    <input placeholder="Tell everyone what your Pin is about" type="text" class="new_pin_input" id="pin_description">
+                    <input placeholder="Add a destination link" type="text" class="new_pin_input" id="pin_destination">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src = "scripts/modalScript.js"></script>
+
+</body>
+</html>
