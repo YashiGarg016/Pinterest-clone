@@ -1,0 +1,244 @@
+.addPinModal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999999;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.addPinCont{
+    padding: 35px;
+    width: 880px;
+    height: 674px;
+    position: absolute;
+    border-radius: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    display: flex;
+
+    background-color: white;
+}
+
+.side {
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+}
+
+#leftSide {
+    /*background-color: orange;*/
+}
+
+#rightSide {
+    /*background-color: blue;*/
+}
+
+.pintMock {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.pintMock_icon{
+    width: 50%;
+}
+
+.section1{
+    width: 100%;
+    height: 8%;
+    /*background-color: purple;*/
+}
+
+.section2{
+    padding: 0px 10px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: aquamarine;*/
+}
+
+.section3 {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: firebrick;*/
+}
+
+#leftSide .section1 .pintMock{
+    width: 40px;
+    height: 40px;
+    background-color:rgba(239, 239, 239, 0);
+    transition-duration: 0.3s;
+
+}
+
+#leftSide .section1 .pintMock:hover{
+        background-color:rgba(239, 239, 239, 1);
+
+}
+
+
+#leftSide .section2 #upload_img_label {
+    width: 100%;
+    height: 100%;
+  
+    cursor: pointer;
+  }
+
+#leftSide .section2 #upload_img_label input{
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+
+
+
+#leftSide .section2 #upload_img_label .upload_img_cont {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+
+    border-radius: 8px;
+  
+    cursor: pointer;
+}
+
+#leftSide .section2 #upload_img_label .upload_img_cont #dotted_border {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 2px dashed #dadada;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    background-color: #efefef;
+  
+    cursor: pointer;
+}
+
+#leftSide .section2 .pintMock{
+    background-color: #767676;
+}
+
+#leftSide .section3 .save_from_site {
+    width: 340px;
+    height: 48px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+.modalsPins{
+    width: 252px;
+    height: 512px;
+    border-radius: 16px;
+    position: relative;
+    display: none;
+    opacity: 0;
+
+    overflow: hidden;
+}
+
+.pinImage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pinImage_img{
+    max-height: 100%;
+}
+
+.pin_max_width {
+    max-width: 100%;
+  }
+  
+.pin_max_height {
+    max-height: 100%;
+}
+  
+#rightSide .section1 {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+#rightSide .section1 .select_size{
+    width: 236px;
+    height: 40px;
+    display: flex;
+}
+  
+#rightSide .section1 .select_size select{
+    width: 70%;
+    height: 100%;
+    border:none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: none;
+  
+    font-size: 16px;
+  
+    background-color: #EFEFEF;
+}
+  
+#rightSide .section1 .select_size .save_pin{
+    width: 30%;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-weight: 700;
+  
+    color: white;
+    background-color: #E60023;
+    cursor: pointer;
+}
+  
+#rightSide .section2 .new_pin_input {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #C6C6C6;
+    outline: none;
+  
+    font-size: 16px;
+  
+    background-color: transparent;
+}
+

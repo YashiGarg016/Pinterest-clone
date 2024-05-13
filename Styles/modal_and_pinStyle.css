@@ -1,0 +1,26 @@
+.nav_bar {
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: 0;
+}
+
+.nav_bar .addPin {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 10%;
+    left: 90%;
+    transition-duration: 0.3s;
+}
+
+.nav_bar .addPin :hover{
+    background-color: #767676;
+    transform: scale(1.2);
+}
+
+.addPinModal {
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 0.5s;
+}
